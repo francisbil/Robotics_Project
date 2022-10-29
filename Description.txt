@@ -1,0 +1,17 @@
+Notre librairie contient plusieurs classes permettant de faire des operations utiles sur le robot.
+Il s'agit des memes classes concues lors du TP7, mais ameliorees en fonction des commentaires du correcteur.
+La classe Button permet de faire fonctionner le bouton Interrupt sur la carte mere.
+La classe can est utile pour travailler avec le convertisseur analogique-numerique.
+La classe Led permet de controler la LED sur la carte mere.
+La classe Memoire24CXXX permet de lire et ecrire dans la memoire externe.
+La classe Move permet de faire tourner les roues du robot.
+La classe Timer permet d'utiliser les minuteries en mode CTC ou PWM.
+La classe Uart permet de transmettre ou recevoir des informations par RS232.
+Nous avons aussi quelques fonctions dans les fichiers debug.h / debug.cpp servant a afficher la vitesse
+des roues, les valeurs captees par les photoresistances et la valeur captee par le capteur de distance.
+
+Finalement, nous avons une classe Route (parcours en anglais, on ne trouvait pas de meilleure traduction)
+qui contient plusieurs methodes. Ces methodes representent chacune une etape du parcours. Cette classe a
+aussi en attribut des instances des classes de la librairie (Button, can, Led, Memoire24CXXX, Move et Timer).
+Ainsi, on s'assure d'instancier ces classes une seule fois, car ce sont ces attributs qu'on utilise a chaque
+fois.

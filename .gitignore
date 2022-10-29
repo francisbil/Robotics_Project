@@ -1,0 +1,11 @@
+.vscode
+*.d
+*.elf
+*.map
+*.o
+*.hex
+*.a
+*_backup.simu
+*.bin
+progmem
+serieViaUSB
